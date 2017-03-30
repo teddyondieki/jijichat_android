@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:paddingTop="@dimen/vertical_offset"
+    tools:context="co.jijichat.search.RoomSearchActivity" >
+
+    <ListView
+        android:id="@+id/lvRoomSearchResults"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#e5e4e5"
+        android:dividerHeight="1px" />
+
+    <TextView
+        android:id="@+id/refreshRooms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/refreshButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dgts__margin_bottom"
+        android:gravity="center"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:text="Failed."
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/refreshButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:src="@drawable/ic_menu_refresh_holo_light"
+        android:visibility="gone" />
+
+</RelativeLayout>

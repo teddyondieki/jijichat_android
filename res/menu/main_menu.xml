@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/refreshRoomsList"
+        android:icon="@drawable/ic_group_white_24dp"
+        android:showAsAction="ifRoom"
+        android:title="@string/action_refresh_rooms_list">
+    </item>
+    <item
+        android:id="@+id/settings"
+        android:title="@string/action_settings">
+    </item>
+
+</menu>

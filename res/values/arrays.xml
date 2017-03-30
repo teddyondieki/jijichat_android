@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="incoming_file_stores">
+        <item>Download</item>
+        <item>Movies</item>
+        <item>Music</item>
+        <item>Pictures</item>
+    </string-array>
+    <string-array name="presence_queue_timeout">
+        <item>3 min</item>
+        <item>6 min</item>
+        <item>9 min</item>
+        <item>12 min</item>
+        <item>15 min</item>
+    </string-array>
+    <string-array name="geolocation_precision">
+        <item>Country</item>
+        <item>City</item>
+        <item>Street</item>
+        <item>Latitude/Longitude</item>
+    </string-array>
+    <string-array name="pref_notification_vibrate_values_entries">
+        <item>Default</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="pref_notification_vibrate_values">
+        <item>default</item>
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+    <string-array name="relationship_status">
+        <item>Select relationship status...</item>
+        <item>Single</item>
+        <item>In a relationship</item>
+        <item>Engaged</item>
+        <item>Married</item>
+        <item>Divorced</item>
+    </string-array>
+    <string-array name="location">
+        <item>Select location...</item>
+        <item>Nairobi</item>
+        <item>Nakuru</item>
+        <item>Kisumu</item>
+        <item>Mombasa</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Select gender...</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="NaiTheme.Light" parent="@android:style/Theme.Holo.Light">
+        <!-- Any customizations for your app running on pre-3.0 devices here -->
+    </style>
+
+    <style name="NaiTheme.Light.NoTitleBar" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <!-- Any customizations for your app running on pre-3.0 devices here -->
+    </style>
+
+</resources>

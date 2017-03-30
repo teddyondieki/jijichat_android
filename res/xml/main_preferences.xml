@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="jijichat_mobile_preferences"
+    android:title="@string/preferencesTitle" >
+
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="chat_settings"
+        android:title="@string/pref_login_ui_section_title" >
+        <PreferenceScreen
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:enabled="true"
+            android:key="vcard"
+            android:title="@string/accountVCard" >
+            <intent
+                android:action="co.jijichat.account.personalInfo.EDIT"
+                android:targetClass="authenticator.InitializationActivity.class" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="enter_to_send"
+            android:summary="@string/pref_entertosend_summary"
+            android:title="@string/pref_entertosend_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="gui_notifications"
+        android:title="@string/pref_login_notifications_section_title" >
+        <RingtonePreference
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="notification_sound"
+            android:ringtoneType="notification"
+            android:showDefault="true"
+            android:showSilent="true"
+            android:title="@string/pref_notification_sound_title" >
+        </RingtonePreference>
+
+        <ListPreference
+            android:defaultValue="default"
+            android:entries="@array/pref_notification_vibrate_values_entries"
+            android:entryValues="@array/pref_notification_vibrate_values"
+            android:key="notification_vibrate"
+            android:title="@string/pref_notification_vibrate_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:key="help"
+        android:title="Help" >
+        <PreferenceScreen
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:enabled="true"
+            android:key="about"
+            android:title="About" >
+            <intent
+                android:action="co.jijichat.account.settings.ABOUT"
+                android:targetClass="authenticator.InitializationActivity.class" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="FAQ" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="https://jijichat.co/page/faq" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

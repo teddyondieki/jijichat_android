@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="co.jijichat.AboutActivity" >
+
+    <TextView
+        android:id="@+id/jijiName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/jijiVersion"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:text="Jijichat"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/jijiVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dgts__margin_bottom"
+        android:gravity="center"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:text="@string/app_version"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:src="@drawable/ic_launcher" />
+
+</RelativeLayout>

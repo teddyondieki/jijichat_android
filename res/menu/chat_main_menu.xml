@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/shareImageButton"
+        android:icon="@android:drawable/ic_menu_gallery"
+        android:showAsAction="ifRoom"
+        android:title="@string/shareImageButton">
+    </item>
+    <item
+        android:id="@+id/contactDetails"
+        android:title="@string/contact_details">
+    </item>
+    <item
+        android:id="@+id/clearMessageHistory"
+        android:title="Clear Conversation">
+    </item>
+
+</menu>

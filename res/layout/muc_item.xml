@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/list_vertical_padding"
+    android:paddingLeft="@dimen/list_horizontal_padding"
+    android:paddingRight="@dimen/list_horizontal_padding"
+    android:paddingTop="@dimen/list_vertical_padding" >
+
+    <ImageView
+        android:id="@+id/roomAvatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:adjustViewBounds="true" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/roomName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/roomAvatar"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:singleLine="true"
+        android:text=""
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <github.ankushsachdeva.emojicon.EmojiconTextView
+        xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/roomDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/roomUnreadCounter"
+        android:layout_toLeftOf="@+id/roomUnreadCounter"
+        android:layout_toRightOf="@+id/roomAvatar"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:singleLine="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        emojicon:emojiconSize="16sp" />
+
+    <TextView
+        android:id="@+id/roomUnreadCounter"
+        style="@style/RosterMessageCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/roomName" />
+
+</RelativeLayout>

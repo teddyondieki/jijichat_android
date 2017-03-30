@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- for emulator include bg -->
+    <!-- <color name="holo_light_bg_color">#fff3f3f3</color> -->
+    <!-- the unprefixed ones (without android:) are for the Sherlock implementation -->
+
+    <style name="JijiLightTheme" parent="Theme.Sherlock.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/MyActionBar</item>
+        <item name="actionBarStyle">@style/MyActionBar</item>
+    </style>
+
+    <style name="IndeterminateProgress" parent="Widget.Sherlock.ProgressBar">
+        <item name="android:minWidth">32dip</item>
+        <item name="android:maxWidth">32dip</item>
+        <item name="android:minHeight">32dip</item>
+        <item name="android:maxHeight">32dip</item>
+    </style>
+
+    <style name="MyActionBar" parent="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/actionBar_bg</item>
+        <item name="background">@color/actionBar_bg</item>
+        <item name="indeterminateProgressStyle">@style/IndeterminateProgress</item>
+        <item name="titleTextStyle">@style/NaiChat.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/NaiChat.SubTitleTextStyle</item>
+        <item name="android:titleTextStyle">@style/NaiChat.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/NaiChat.SubTitleTextStyle</item>
+    </style>
+
+    <style name="NaiChat.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- <style name="TextSecure.TitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title"> -->
+    <!-- <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item> -->
+    <!-- <item name="android:textColor">#FFF</item> -->
+    <!-- </style> -->
+
+    <style name="NaiChat.SubTitleTextStyle" parent="TextAppearance.Sherlock.Widget.ActionBar.Subtitle">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="NaiTheme" parent="@android:style/Theme">
+        <!-- Any customizations for your app running on pre-3.0 devices here -->
+    </style>
+
+    <style name="NaiTheme.Light" parent="@android:style/Theme.Light">
+        <!-- Any customizations for your app running on pre-3.0 devices here -->
+    </style>
+
+    <style name="NaiTheme.Light.NoTitleBar" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Any customizations for your app running on pre-3.0 devices here -->
+    </style>
+
+    <!-- <style name="NaiChat.Spinner" parent="Widget.Sherlock.Spinner.DropDown.ActionBar"> -->
+    <!-- <item name="android:background">@drawable/abs__spinner_ab_holo_light</item> -->
+    <!-- </style> -->
+
+    <style name="NaiChat.ActionBarPopupLargeTextColor" parent="TextAppearance.Sherlock.Widget.PopupMenu.Large">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="NaiChat.ActionBarPopupSmallTextColor" parent="TextAppearance.Sherlock.Widget.PopupMenu.Small">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+</resources>

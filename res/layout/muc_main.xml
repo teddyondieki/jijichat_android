@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="@dimen/vertical_offset"
+    tools:context="co.jijichat.JijichatMobileMessengerActivity" >
+
+    <ListView
+        android:id="@+id/roomList"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="#e5e4e5"
+        android:dividerHeight="1px"
+        android:saveEnabled="true" />
+
+    <co.jijichat.utils.TextViewWithImages  android:id="@+id/addRoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/list_horizontal_padding"
+        android:paddingRight="@dimen/list_horizontal_padding"
+        android:gravity="center"
+        android:text="To join a room, click [img src=ic_group_grey600_24dp/] at the top of your screen."
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>
