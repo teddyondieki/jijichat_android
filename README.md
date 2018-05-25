@@ -4,7 +4,7 @@ Jijichat Android application for realtime communication through public chat room
 
 
 <p float="left">
-  <img src="/sc1.png" width="100" />
-  <img src="/sc2.png" width="100" /> 
-  <img src="/sc3.png" width="100" />
+  <img src="/sc1.png" width="30%" />
+  <img src="/sc2.png" width="30%" /> 
+  <img src="/sc3.png" width="30%" />
 </p>
